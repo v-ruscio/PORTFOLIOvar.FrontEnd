@@ -1,0 +1,190 @@
+body {
+    background-color: #ECD9AD;
+
+}
+
+/*Scroll Personalizado*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: #ECD9AD
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #D6AABE;
+    border-radius: 10px;
+    border-right: 2px solid #ECD9AD;
+}
+
+
+/* Titulo del portfolio */
+#cabecera {
+    height: 150px;
+    width: 600px;
+    background-color: #D6AABE;
+    margin: 0 auto;
+    border: 5px solid #D6AABE;
+    border-radius: 8em;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(87, 87, 87) 1px 0 10px;
+}
+
+h1.titulo {
+    
+    color: #EDC9AD;
+    margin-top: 100px;
+    line-height: 0px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: rgb(87, 87, 87) 1px 0 10px;
+}
+
+
+h2.titulo {
+    
+    color: #EDC9AD;
+    margin-bottom: 50px;
+    line-height: 5px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: rgb(87, 87, 87) 1px 0 10px;
+}
+
+/*Avatar */
+.avatar > nav {
+    position:relative;
+    top: -100px;
+    left: 125px;
+    font-family: comic sans ms;
+    font-size: 1.5em;
+}
+
+.avatar img {
+    height: 200px;
+    width: 200px;
+    border: 5px solid #D6AABE;
+    border-radius: 25em;
+    position: relative;
+    top: -200px;
+    left: 100px;
+    }
+
+.avatar img:hover {
+    cursor: pointer;
+    opacity: 15%;
+}
+
+/*Parrafo*/
+p {
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: rgb(87, 87, 87) 1px 0 10px;
+    font-family: comic sans ms;
+    line-height: 1.6em;
+
+}
+
+/*Sobre mi*/
+.sobre-mi {
+    position: absolute;
+    left: 20%;
+    right: 5%;
+}
+p.sobre-mi {
+    color: #A26775;
+    margin-top: -400px;
+    margin-left: 100px;
+}
+
+/*Botones laterales*/
+.cont-boton {
+    justify-self: center;
+}
+.boton {
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 250px;
+    height: 75px;
+    background-color: #76A9A2;
+    border-radius: 5em;
+    cursor: pointer;
+    transition: background-color 1s;
+    align-content: center;
+    justify-content: center;
+    box-shadow: rgb(87, 87, 87) 1px 0 10px;
+}
+.boton:hover {
+    background-color: #a0e2d9;
+}
+.boton p {
+    padding-top: 7px;
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ECD9AD;
+    text-shadow: rgb(87, 87, 87) 1px 0 10px;
+    font-family: comic sans ms;
+    line-height: 1.6em;
+}
+
+/*Proyectos*/
+.proyectos {
+    margin-top: 150px;
+}
+
+p.proyectos {
+    color: #ECD9AD;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.boton2 {
+    position:absolute;
+    left: 42%;
+    width: 250px;
+    height: 75px;
+    background-color: #76A9A2;
+    border-radius: 5em;
+    cursor: pointer;
+    transition: background-color 1s;
+    align-content: center;
+    justify-content: center;
+    box-shadow: rgb(87, 87, 87) 1px 0 10px;
+}
+
+section {
+    margin-left: 15%;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 70%;
+    height: 500px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: pointer;
+    width: 300px;
+    height: 100%;
+    opacity: 1;
+    filter: contrast(120%);
+}
