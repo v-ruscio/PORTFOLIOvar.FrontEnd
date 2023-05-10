@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background-color: black !important;
 
-}
+} 
+
 
 /*Scroll Personalizado*/
 
@@ -50,6 +51,7 @@ body::-webkit-scrollbar-thumb {
     .headerAP img {
         height: 50px;
         width: 50px;
+        margin-right: auto;
     }
 }
 .header {
@@ -60,11 +62,15 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 600px) {
     .header{
-        width: 280px;
+        width: 260px;
     }
 }
-.header button a {
-    font-size: xx-small;
+.header  a {
+    color: #D6AABE;
+    font-size: x-small;
+    text-align: center;
+    justify-content: center;
+    padding-top:10px;
 }
 .headerRedes {
     height: 50px;
@@ -108,6 +114,14 @@ body::-webkit-scrollbar-thumb {
     color: #A26775;
     display: grid;
     grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 600px) {
+    .perfil {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .perfil img {
     height: 200px;
@@ -164,6 +178,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     font-family: comic sans ms;
     justify-content: center;
+    list-style: none;
 }
 .logos {
     height: 80px;
@@ -172,9 +187,37 @@ body::-webkit-scrollbar-thumb {
     float: left;
     margin-right: 25px;
 }
+@media screen and (max-width: 800px) {
+    .logos{
+        height: 60px;
+        width: 60px;
+    }
+}
+.lista-skills{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.skill {
+    height: 230px;
+    width: 230px;
+}
+@media screen and (max-width: 1200px){
+    .lista-skills{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width: 940px){
+    .lista-skills{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 636px) {
+    .lista-skills{
+        grid-template-columns: auto;
+    }
+}
 
-
-/*barras de progreso*/
+/*barras de progreso (anulado)*/
 :root {
     --bar-color: #767676;
     --fill-size: 25%;
@@ -184,7 +227,7 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
     height: 20px;
     margin: 10px 0 0 50px;
-    background-color: #e20909;
+    background-color: red !important;
     border-radius: 2em;
     overflow: hidden;
 }
