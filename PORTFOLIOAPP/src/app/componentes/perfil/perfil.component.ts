@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/models/persona.model';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 

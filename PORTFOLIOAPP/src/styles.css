@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 0 20px 20px;
     display: grid;
     grid-template-columns: 2fr auto;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr auto;
 }
 
 .headerAP img {
@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header  a {
     color: #D6AABE;
-    font-size: x-small;
+    font-size: xx-small;
     text-align: center;
     justify-content: center;
     padding-top:10px;
@@ -80,6 +80,43 @@ body::-webkit-scrollbar-thumb {
     border-color: #D6AABE;
     border-radius: 10px;
 }
+
+/*Formulario Login*/
+.cont-login {
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 100px auto; 
+    background-color: #76A9A2;
+    border-radius: 10%;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+    color: #D6AABE;
+}
+
+.form-control {
+    height: 50px;
+    background-color: #76A9A2;
+}
+
+.btn-log {
+    background-color: #767676;
+    color: #D6AABE;
+    font-weight: bolder;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+}
+.ng-valid:not(form).ng-touched {
+    border-bottom: 5px solid #42a948;
+}
+.ng-invalid:not(form).ng-touched {
+    border-bottom: 5px solid #a94442;
+}
+
+
 
 /*Banner y foto de perfil*/
 
@@ -104,6 +141,24 @@ body::-webkit-scrollbar-thumb {
     color: #D6AABE;
     text-shadow: #A26775 1px 0 10px;
 }
+
+.gotop {
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    color: #D6AABE;
+    font-family: comic;
+    text-align: center; 
+}
+.gotop  a {
+    color: #D6AABE;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+
 /*Perfil */
 .perfil {
     height: 250px;

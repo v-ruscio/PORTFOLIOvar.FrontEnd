@@ -1,0 +1,25 @@
+<div class="cont-login">
+ <button class="botones" routerLink="/">X</button>
+    <form [formGroup]="loginForm"  method="post" action="">
+         
+        <input id="email"  
+        type="email" 
+        class="form-control" 
+        formControlName="email" 
+        placeholder="email">
+           
+        <input id="contrasena" 
+        type="password" 
+        class="form-control" 
+        formControlName="password" 
+        placeholder="contrasena">
+        
+        <br>
+
+        <button id="btn-log" 
+        type="submit" 
+        class="btn-log" (click)="login()"
+        >Iniciar Sesion</button>
+    
+    </form>
+</div>

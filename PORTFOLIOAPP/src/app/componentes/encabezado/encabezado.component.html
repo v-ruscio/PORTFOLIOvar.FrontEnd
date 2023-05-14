@@ -1,6 +1,6 @@
 <!--Header Argentina Programa + links redes-->    
-<div class="encabezado">
-    <div class="headerAP">
+<div class="encabezado" id="encabezado">
+    <div class="headerAP" routerLink="inicio">
       <img src="assets/images/logoArgProg2.jpg">  
         <div>
              <h4 class="headertext">Argentina Programa</h4>
@@ -13,7 +13,14 @@
         <button class="headerRedes fa-solid fa-briefcase"><a href="#experiencia"><br>job</a></button> 
         <button class="headerRedes fa-solid fa-graduation-cap"><a href="#educacion"><br>edu</a></button>
         <button class="headerRedes fa-solid fa-address-card"><a href="#proyectos"><br>Works</a></button>
-        <button class="headerRedes fa-solid fa-right-to-bracket"><a href="#"><br>login</a></button>
+        <button class="headerRedes fa-solid fa-right-to-bracket">
+            <a routerLink="login" *ngIf="!userLoginOn"><br>Login</a>
+            <a routerLink="inicio" *ngIf="userLoginOn"><br>LogOut</a></button>
+    </div>
+
+   
+
+    <div class="gotop">
+        <button class="botones"><a href="#encabezado">^</a></button>
     </div>
   </div>
-  

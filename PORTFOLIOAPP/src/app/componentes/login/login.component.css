@@ -1,0 +1,13 @@
+.form{
+    position: absolute;
+    margin-top: 10px !important;
+}
+
+.cont-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,27 +1,7 @@
 {
-    "name": "Victoria Aldana Ruscio",
-    "banner": "assets/images/tecladoluces2.jpg",
-    "image": "assets/images/AVATAR.ME.jpg",
-    "position": "Full Stack Dev Jr",
-    "experience": [{   
-        "position": "Full Stack Dev",
-        "company": "Pixar",
-        "img": "assets/images/logopuma.png",
-        "start": "julio 2021",
-        "end":"actualidad"
-     },
-    {
-        "position": "Full Stack Dev",
-        "company": "Apple",
-        "img": "assets/images/logoapple.jpg",
-        "start": "diciembre 2022",
-        "end":"actualidad"
-    },
-    {
-        "position": "Full Stack Dev",
-        "company": "Google",
-        "img": "assets/images/logochrome.jpg",
-        "start": "octubre 2022",
-        "end":"febrero 2023"
-    }]
+    "message": "Autenticacion ok",
+    "id": "1",
+    "name": "Victoria",
+    "email": "victoria@gmail.com"
+
 }

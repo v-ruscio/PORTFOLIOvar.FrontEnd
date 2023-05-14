@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
@@ -13,6 +14,12 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LoginComponent } from './componentes/login/login.component';
+import { Page404Component } from './componentes/page404/page404.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NuevaExpComponent } from './componentes/experiencia/nueva-exp/nueva-exp.component';
+import { EditarExpComponent } from './componentes/experiencia/editar-exp/editar-exp.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +30,19 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ExperienciaComponent,
     EducacionComponent,
     SkillsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    LoginComponent,
+    Page404Component,
+    InicioComponent,
+    NuevaExpComponent,
+    EditarExpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgCircleProgressModule.forRoot({
       "backgroundStrokeWidth": 0,
       "backgroundPadding": 10,
@@ -50,5 +64,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   ],
   providers: [],
   bootstrap: [AppComponent]
+
+ 
+
 })
 export class AppModule { }
